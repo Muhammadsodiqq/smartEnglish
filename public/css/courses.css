@@ -1,0 +1,201 @@
+ul li:first-child a {
+  color: rgba(165, 171, 205, 1);
+}
+
+ul li:hover a {
+  color: rgba(255, 255, 255, 1);
+}
+
+li:nth-child(3) a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.container {
+  padding: 10px 100px 80px;
+}
+
+.adults,
+.teenagers,
+.kids,
+.enroll {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.container h1 {
+  font: 36px "Gilroy";
+  color: rgba(18, 18, 18, 1);
+}
+
+p {
+  font: 15px "Gilroy Regular";
+  margin-top: 6px;
+  color: rgba(138, 138, 138, 1);
+}
+
+.description {
+  width: 50%;
+}
+
+.description p {
+  color: rgba(18, 18, 18, 1);
+  line-height: 21px;
+}
+
+.enroll {
+  flex-wrap: wrap;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #4d4d4d;
+  border-radius: 0;
+  margin-top: 20px;
+}
+
+button[type="submit"] {
+  width: 20%;
+  padding: 10px 0;
+  margin: 30px 0;
+  font: 16px "Gilroy";
+  margin-left: auto !important;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #4d4d4d;
+  cursor: pointer;
+  outline: none;
+  background-color: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button[type="submit"]:hover {
+  background: rgba(3, 18, 109, 1);
+  color: white;
+}
+
+::placeholder {
+  font: 14px "Gilroy Regular";
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 10px 30px;
+  }
+
+  .adults,
+  .teenagers,
+  .kids,
+  .enroll {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .part p {
+    display: none;
+  }
+
+  p {
+    font-size: 14.5px;
+  }
+
+  .container h1 {
+    font: 24px "Gilroy Bold";
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .description p {
+    line-height: 18px;
+  }
+
+  form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    width: 40%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .container {
+    padding: 10px 25px 40px;
+  }
+
+  .adults,
+  .teenagers,
+  .kids,
+  .enroll {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .part p {
+    display: none;
+  }
+
+  .container h1 {
+    font: 26px "Gilroy Bold";
+  }
+
+  .description {
+    width: 95%;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 10px 60px 40px;
+  }
+
+  .adults,
+  .teenagers,
+  .kids {
+    margin-top: 60px;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .container {
+    padding: 10px 70px 40px;
+  }
+
+  .container h1 {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

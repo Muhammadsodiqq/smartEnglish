@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 100px;
+}
+
+.container p {
+  font: 14px "Gilroy Regular";
+  color: #8a3e3e;
+  line-height: 20px;
+}
+
+.container h3 {
+  font: 18px "Gilroy";
+}
+
+.container img {
+  margin-right: 5px;
+}
+
+.nutshell,
+.container p {
+  width: 40%;
+}
+
+.nutshell li {
+  font: 14px "Gilroy Regular";
+  width: 75%;
+}
+
+.nutshell img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.dark {
+  color: #121212;
+}
+
+.advantage {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_- Responsive Settings -_-_-_-_-_-_-_-_-_-_ */
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+
+  .nutshell {
+    margin-top: 40px;
+  }
+
+  .nutshell img {
+    margin-right: 5px;
+  }
+
+  .nutshell,
+  .container p {
+    width: 90%;
+  }
+}
+
+@media (min-width: 567px) and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    padding: 60px;
+  }
+
+  .nutshell {
+    margin-top: 50px;
+  }
+
+  .nutshell,
+  .container p {
+    width: 85%;
+  }
+
+  .nutshell img {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 60px 70px;
+  }
+  .attractiveAds {
+    padding: 50px 0 20px;
+  }
+
+  .attractiveAds p {
+    display: none;
+  }
+
+  .nutshell,
+  .container p {
+    width: 45%;
+  }
+
+  .container p,
+  .container li {
+    font-size: 12px;
+  }
+
+  .nutshell li {
+    width: 100%;
+  }
+
+  .nutshell img {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .container {
+    padding: 60px 70px;
+  }
+
+  .container li {
+    width: 100%;
+  }
+
+  .container p {
+    width: 45%;
+  }
+
+  .container img {
+    margin-right: 5px;
+  }
+}

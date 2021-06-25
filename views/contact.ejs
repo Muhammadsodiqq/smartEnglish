@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart English Official</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="icon" href="img/Group 5.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar-brand">
+          <h3 class="logo-setting">
+            smart english <br />
+            official.
+          </h3>
+        </div>
+
+        <ul class="linksToPages">
+          <li><a href="/index">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/courses">Courses</a></li>
+        </ul>
+
+        <div class="controls">
+          <div class="changeLanguage">
+            <h3 onclick="myFunction()" class="dropbtn">Eng</h3>
+
+            <img
+              id="direction"
+              class="dropbtn"
+              src="img/controlsPart.svg"
+              alt=""
+              onclick="myFunction()"
+            />
+            <ul id="drop-down" class="drop-down-menu">
+              <li><a href="#">Uzb</a></li>
+            </ul>
+          </div>
+          <div class="burger" onclick="name()">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+            <div id="main-menu-content" class="main-menu">
+              <ul>
+                <li><a href="/index">Home</a></li>
+                <hr style="width: 100%" />
+                <li><a href="/about">About</a></li>
+                <hr style="width: 100%" />
+                <li><a href="/courses">Courses</a></li>
+                <hr style="width: 100%" />
+                <li><a href="/study">Ta'lim & ish</a></li>
+                <hr style="width: 100%" />
+                <li><a href="/vacancies">Vakansiya</a></li>
+                <hr style="width: 100%" />
+                <li><a href="/news">News</a></li>
+                <hr style="width: 100%" />
+                <li><a href="/contact">Bog'lanish</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="attractiveAds container1">
+        <h1>Contact</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="location">
+        <h2 class="font-for-names">
+          Our main branch <br />
+          address
+        </h2>
+        <p class="for_text">
+          Andijan viloyati, Marhamat tumani Ipak yo’li 76-uy
+        </p>
+        <br /><br />
+        <h2 class="font-for-names tel">Telephone Number</h2>
+        <p class="for_text">+998 99 432 18 16</p>
+        <p class="for_text">+998 99 473 18 16</p>
+      </div>
+      <div class="locationOne">
+        <h2 class="font-for-names">
+          The address of our branch <br />
+          in Yangi Bazar
+        </h2>
+        <p class="for_text">
+          Andijan shahar, Yangi bozor daxasi, Buyuk turon koʻchasi 28-uy
+          (moʻljal: Mumtoz savdo markazi orqa tomonida)
+        </p>
+      </div>
+      <div class="message">
+        <h3 class="font-for-names">Would you like to send us a message?</h3>
+        <form action="#">
+          <input
+            class="getName"
+            type="text"
+            maxlength="30"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="text"
+            maxlength="17"
+            pattern="/d"
+            onkeypress="return isNumberKey(event)"
+            placeholder="Phone"
+            required
+          />
+          <input type="email" maxlength="25" placeholder="Email" required />
+          <textarea name="" id="" placeholder="Message" required></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <img src="img/contact.svg" alt="" />
+    </div>
+
+    <div class="container1">
+      <img class="map" src="img/map.png" alt="" />
+    </div>
+
+    <footer>
+      <div class="footer container1">
+        <p class="copyright1">© 2017 - 2021 SMART ENGLISH EDUCATION CENTRE</p>
+
+        <ul>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

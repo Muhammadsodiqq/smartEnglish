@@ -1,0 +1,394 @@
+ul li:first-child a {
+  color: rgba(165, 171, 205, 1);
+}
+
+ul li:hover a {
+  color: rgba(255, 255, 255, 1);
+}
+
+li:nth-child(2) a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.container {
+  padding: 80px 100px;
+  position: relative;
+}
+
+.effect {
+  position: absolute;
+  width: 20%;
+  top: 4.5%;
+  left: 16%;
+}
+
+.container h1 {
+  font: 34px "Gilroy";
+  color: rgba(18, 18, 18, 1);
+}
+
+.history,
+.mission,
+.founder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission,
+.founder {
+  margin-top: 80px;
+}
+
+.second-part {
+  width: 50%;
+}
+
+.container h3 {
+  font: 24px "Gilroy";
+  color: rgba(18, 18, 18, 1);
+  margin: 40px 0 14px;
+}
+
+.second-part:last-child h3:first-child {
+  margin: 0px 0 0;
+}
+
+.video {
+  text-align: center;
+  width: 100%;
+  padding: 70px 0 30px;
+}
+
+.video iframe {
+  border: none;
+  width: 70%;
+  height: 60vh;
+}
+
+.founder {
+  align-items: center;
+}
+
+.founder img {
+  width: 40%;
+}
+
+.members {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.people {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.person {
+  width: 22%;
+  position: relative;
+}
+
+.person img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 15px !important;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.58));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.overlay h3 {
+  margin: 65% 0 0 0 !important;
+  color: #f1f1f1;
+}
+
+.overlay p {
+  font: 14px "Gilroy Light";
+  color: white;
+}
+
+.person:hover .overlay {
+  opacity: 1;
+}
+
+.founder h1 {
+  font-family: "Gilroy Medium";
+  margin-bottom: 20px;
+}
+
+.for-text {
+  font: 14px "Gilroy Regular";
+  color: #8a8a8a;
+  line-height: 20.5px;
+}
+
+.for_text {
+  font: 14px "Gilroy Regular";
+  color: #8a8a8a;
+}
+
+.dark {
+  color: #121212 !important;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 60px 30px;
+  }
+
+  .effect {
+    display: none;
+  }
+
+  .container h1 {
+    font: 28px "Gilroy Bold";
+  }
+
+  .history,
+  .mission,
+  .founder {
+    flex-direction: column;
+  }
+
+  .mission {
+    margin-top: 50px;
+  }
+
+  .second-part {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .container h3 {
+    font-size: 20px;
+    margin: 22px 0 10px;
+  }
+
+  .video {
+    padding: 0px;
+    margin: 40px 0 0;
+  }
+
+  .video iframe {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .founder img {
+    width: 95%;
+  }
+
+  .members {
+    flex-direction: column;
+  }
+
+  .people {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .people h3 {
+    font-size: 14px;
+  }
+
+  .people p {
+    font-size: 12px;
+  }
+
+  .for-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .for_text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .container {
+    padding: 40px 25px;
+  }
+
+  .effect {
+    display: none;
+  }
+
+  .container h1 {
+    font: 30px "Gilroy Bold";
+  }
+
+  .history,
+  .mission,
+  .founder {
+    flex-direction: column;
+  }
+
+  .mission {
+    margin: 50px 0;
+  }
+
+  .second-part {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .container h3 {
+    font-size: 21px;
+    margin: 25px 0 10px;
+  }
+
+  .video {
+    padding: 0 0 0 0;
+  }
+
+  .video iframe {
+    width: 80%;
+    height: 40vh;
+  }
+
+  .founder img {
+    width: 60%;
+    margin-right: auto;
+  }
+
+  .members {
+    flex-direction: column;
+  }
+
+  .people {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .person {
+    width: 24%;
+  }
+
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 5px 5px 0 !important;
+  }
+
+  .overlay h3 {
+    font-size: 15px;
+  }
+
+  .overlay p {
+    font-size: 12px;
+  }
+
+  .logoPart p {
+    padding: 0 0 0 0;
+  }
+
+  .for-text {
+    font-size: 14.2px;
+    line-height: 20px;
+  }
+
+  .for_text {
+    font-size: 14.2px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 40px 40px;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .container h3 {
+    font-size: 21px;
+    margin: 25px 0 10px;
+  }
+
+  .video {
+    padding: 50px 0 0 0;
+  }
+
+  .video iframe {
+    width: 80%;
+    height: 40vh;
+  }
+
+  .founder img {
+    width: 45%;
+    margin-right: auto;
+  }
+
+  .founder p {
+    line-height: 20px;
+  }
+
+  .overlay h3 {
+    font-size: 15px;
+  }
+
+  .overlay p {
+    font-size: 12px;
+  }
+
+  .for-text {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .for_text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .container {
+    padding: 40px 50px;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .container h3 {
+    margin: 25px 0 10px;
+  }
+
+  .video {
+    padding: 50px 0 0 0;
+  }
+
+  .video iframe {
+    width: 60%;
+    height: 40vh;
+  }
+
+  .for-text {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .for_text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

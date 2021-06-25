@@ -1,0 +1,161 @@
+.for-text {
+  font: 14px "Gilroy Regular";
+  color: rgba(18, 18, 18, 1);
+}
+
+.container {
+  display: flex;
+  padding: 80px 60px 60px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.needs {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.teacher-part {
+  width: 27%;
+}
+
+.requirements {
+  width: 28%;
+}
+
+.telForContact {
+  width: 24%;
+}
+
+.container h2 {
+  white-space: nowrap;
+  font: 26px "Gilroy";
+  color: rgba(18, 18, 18, 1);
+}
+
+.must-have {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.must-have:first-child {
+  margin-top: 0;
+}
+
+.must-have img {
+  width: 20px;
+  margin-right: 4px;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 50px 30px 30px;
+  }
+
+  .container h2 {
+    font-size: 19px;
+  }
+
+  .needs {
+    flex-direction: column;
+  }
+
+  .teacher-part,
+  .requirements,
+  .telForContact {
+    width: 100%;
+  }
+
+  .teacher-part p + br {
+    display: none;
+  }
+
+  .teacher-part p:last-child {
+    margin-bottom: 25px;
+  }
+
+  .must-have {
+    margin-top: 5px;
+  }
+
+  .telForContact {
+    margin-top: 20px;
+  }
+
+  .for-text {
+    font-size: 12px;
+  }
+
+  .must-have img {
+    width: 18px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .container {
+    padding: 40px 0px;
+  }
+
+  .container h2 {
+    font-size: 24px;
+  }
+
+  .needs {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .teacher-part,
+  .requirements,
+  .telForContact {
+    width: 45%;
+  }
+
+  .teacher-part p + br {
+    display: none;
+  }
+
+  .telForContact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .for-text {
+    font-size: 13px;
+  }
+
+  .must-have img {
+    width: 17px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 70px 40px;
+  }
+
+  .container h2 {
+    font-size: 24px;
+  }
+
+  .for-text {
+    font-size: 13px;
+  }
+
+  .must-have img {
+    width: 19px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .container {
+    padding: 70px;
+  }
+}

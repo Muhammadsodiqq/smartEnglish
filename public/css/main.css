@@ -1,0 +1,575 @@
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_- Main Part Settings _-_-_-_-_-_-_-_-_-_-_-_ */
+
+.attractiveAds {
+  text-align: center;
+  padding: 70px 0;
+}
+
+header h1 {
+  font: 55px "Gilroy Bold";
+  text-transform: capitalize;
+  text-align: center !important;
+}
+
+header p {
+  text-align: center !important;
+  font: 14px "Gilroy Regular";
+  color: rgba(165, 171, 205, 1);
+  padding: 20px 0;
+}
+
+.container {
+  padding: 80px 100px !important;
+  position: relative;
+}
+
+.container h3 {
+  font: 20px "Gilroy";
+}
+
+.about-part,
+.courses,
+.news,
+.statistics,
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description,
+.typesOfCourses,
+.data {
+  width: 50%;
+}
+
+.about-part p,
+.news p {
+  line-height: 20px;
+}
+
+.about-part a {
+  display: inline-block;
+  font: 18px "Gilroy Medium";
+  text-decoration: none;
+  color: black;
+  margin-top: 35px;
+}
+
+.about-part img {
+  vertical-align: middle;
+  width: 40px;
+  margin-left: 5px;
+}
+
+.courses,
+.news,
+.statistics,
+.contact {
+  margin-top: 90px;
+}
+
+.typesOfCourses {
+  display: flex;
+  flex-direction: column;
+}
+
+.adults,
+.kids {
+  width: 50%;
+  border: 1px solid #121212;
+  padding: 25px 30px;
+}
+
+.typesOfCourses p {
+  padding: 18px 0 40px;
+}
+
+.teenagers {
+  margin-left: auto;
+  width: 50%;
+  border: 1px solid #121212;
+  padding: 25px 30px;
+}
+
+.news p {
+  width: 90%;
+  padding: 15px 0;
+}
+
+.data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbers {
+  width: 100%;
+  border: 1px solid #121212;
+  padding: 20px;
+}
+
+.data .part:nth-child(1),
+.place .part:nth-child(1) {
+  width: 42% !important;
+}
+
+.data .part:nth-child(2) {
+  width: 42%;
+  margin-left: 23px;
+}
+
+.data .part:nth-child(1) .numbers:nth-child(2),
+.data .part:nth-child(2) .numbers:nth-child(2) {
+  margin-top: 22px;
+}
+
+.data .part:nth-child(2) .numbers:nth-child(1) {
+  padding-bottom: 30px;
+}
+
+.place {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.branch-address {
+  width: 45%;
+  padding-bottom: 30px;
+}
+
+.branch-address a {
+  display: inline-block;
+  font: 14px "Gilroy Medium";
+  text-decoration: none;
+  color: rgba(138, 138, 138, 1);
+}
+
+.second-line {
+  margin-top: 8px;
+}
+
+.branch-address h5 {
+  padding-bottom: 10px;
+}
+
+.dark {
+  color: #121212;
+}
+
+.setting-for-links {
+  display: block;
+  font: 14px "Gilroy Medium";
+  text-decoration: none;
+  color: #121212;
+  text-align: end;
+  padding-bottom: 10px;
+}
+
+.settings-for-link-img {
+  width: 29px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.font-for-titles {
+  font: 35px "Gilroy";
+  color: rgba(18, 18, 18, 1);
+}
+
+.font-for-description {
+  font: 14px "Gilroy Regular";
+  color: #8a8a8a;
+}
+
+.font-for-location {
+  font: 18px "Gilroy";
+  color: black;
+}
+
+.fonts-for-data {
+  font: 17px "Gilroy Regular";
+  color: #121212;
+  padding: 10px 0 0 0;
+}
+
+.container .background-img {
+  width: 21%;
+  position: absolute;
+  top: 5.45%;
+  left: 21.24%;
+}
+
+.container .background-img1 {
+  width: 21%;
+  position: absolute;
+  top: 30.45%;
+  left: 120px;
+}
+
+.container .background-img2 {
+  width: 21%;
+  position: absolute;
+  top: 64%;
+  left: 23%;
+}
+
+._links {
+  text-decoration: none;
+  color: #121212;
+}
+
+._links:hover {
+  text-decoration: underline;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_- Footer Settings -_-_-_-_-_-_-_-_-_-_-_-_ */
+
+.location h4,
+.location a,
+.socialSites a {
+  font: 400 14px "Gilroy Light";
+  padding: 0px;
+  text-decoration: none;
+  color: white;
+}
+
+.location a:nth-child(2) {
+  margin: 18px 0 10px;
+  display: block;
+}
+
+.location span {
+  white-space: nowrap;
+}
+
+.socialSites {
+  text-align: end;
+}
+
+.socialSites a:hover {
+  text-decoration: underline;
+}
+
+.socialSites li:nth-child(2) {
+  margin: 12px 0;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_- JS effects _-_-_-_-_-_-_-_-_-_-_-_ */
+
+.show {
+  display: flex;
+}
+
+.show1 {
+  transform: rotateX(180deg);
+}
+
+.change-position {
+  transform: translateX(0px);
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_- Responsive Settings -_-_-_-_-_-_-_-_-_-_ */
+
+@media (max-width: 576px) {
+  .attractiveAds {
+    padding: 80px 20px 20px;
+  }
+
+  .attractiveAds br {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 34px;
+  }
+
+  header p {
+    padding: 0px 0 0 0;
+  }
+
+  .container {
+    padding: 60px 30px !important;
+  }
+
+  .about-part,
+  .courses,
+  .news,
+  .statistics,
+  .contact {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .courses,
+  .news,
+  .statistics,
+  .contact {
+    margin-top: 40px;
+  }
+
+  .description,
+  .typesOfCourses,
+  .data {
+    width: 100%;
+  }
+
+  .about-part a {
+    font-size: 14px;
+  }
+
+  .about-part img {
+    width: 23px;
+  }
+
+  .adults,
+  .teenagers {
+    width: 100%;
+    padding: 15px 20px;
+    border-bottom: none;
+  }
+
+  .kids {
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  .adults p,
+  .teenagers p,
+  .kids p {
+    width: 100%;
+  }
+
+  .news h3 {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .numbers {
+    padding: 15px;
+  }
+
+  .numbers br {
+    display: none;
+  }
+
+  .data .part:nth-child(1),
+  .place .part:nth-child(1) {
+    width: 45% !important;
+  }
+
+  .data .part:nth-child(2),
+  .place .part:nth-child(2) {
+    width: 47% !important;
+  }
+
+  .data .part:nth-child(2) {
+    margin-left: 15px;
+  }
+
+  .data .part:nth-child(1) .numbers:nth-child(2),
+  .data .part:nth-child(2) .numbers:nth-child(2) {
+    margin-top: 15px;
+  }
+
+  .place {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .branch-address {
+    width: 100%;
+  }
+
+  .part {
+    width: 60%;
+  }
+
+  .fonts-for-data {
+    font-size: 15px;
+  }
+
+  .font-for-titles {
+    font: 22px "Gilroy Bold";
+    padding: 10px 0;
+  }
+
+  .font-for-description {
+    font-size: 13px;
+    line-height: 16px !important;
+    padding: 0 0 0 0 !important;
+  }
+
+  .second-line {
+    margin-top: 10px;
+  }
+
+  .background-effect {
+    display: none;
+  }
+
+  .socialSites {
+    text-align: start !important;
+  }
+}
+
+@media (min-width: 567px) and (max-width: 767px) {
+  .attractiveAds {
+    padding: 70px 50px 20px;
+  }
+
+  .attractiveAds br {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 40px !important;
+  }
+
+  header p {
+    width: 100% !important;
+  }
+
+  .container {
+    padding: 50px 25px !important;
+  }
+
+  .about-part,
+  .courses,
+  .news,
+  .statistics,
+  .contact {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .courses,
+  .news,
+  .statistics,
+  .contact {
+    margin-top: 50px;
+  }
+
+  .description,
+  .typesOfCourses,
+  .data,
+  .place {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .place {
+    width: 100%;
+  }
+
+  .background-effect {
+    display: none;
+  }
+
+  .socialSites {
+    text-align: start !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header h1 {
+    font-size: 40px !important;
+  }
+
+  header p {
+    padding: 25px 0 0 0 !important;
+  }
+
+  .container {
+    padding: 50px 40px !important;
+  }
+
+  .description,
+  .typesOfCourses,
+  .data,
+  .place {
+    width: 60%;
+  }
+
+  .adults,
+  .teenagers,
+  .kids {
+    padding: 15px 20px;
+  }
+
+  .courses,
+  .news,
+  .statistics,
+  .contact {
+    margin-top: 40px;
+  }
+
+  .typesOfCourses p {
+    padding: 18px 0 30px;
+  }
+
+  .font-for-titles {
+    font-size: 28px;
+  }
+
+  .font-for-description {
+    font-size: 12px;
+  }
+
+  .font-for-titles {
+    font-size: 26px;
+  }
+
+  .fonts-for-data {
+    font-size: 16px;
+  }
+
+  .container .background-img2 {
+    left: 15%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .attractiveAds {
+    padding: 70px 30px 10px;
+  }
+
+  header h1 {
+    font-size: 44px;
+  }
+
+  header p {
+    width: 100% !important;
+    padding: 25px 0 0 0;
+    text-align: center !important;
+  }
+
+  .container {
+    padding: 65px 50px;
+  }
+
+  .about-part a {
+    font-size: 16px;
+  }
+
+  .courses,
+  .news,
+  .statistics,
+  .contact {
+    margin-top: 60px;
+  }
+
+  .adults,
+  .teenagers,
+  .kids {
+    padding: 20px 25px;
+  }
+  .font-for-titles {
+    font-size: 33px;
+  }
+
+  .font-for-description {
+    font-size: 13px;
+  }
+}

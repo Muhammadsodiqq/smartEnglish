@@ -1,0 +1,795 @@
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_- Fonts _-_-_-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+@font-face {
+  font-family: "Axiforma Semibold";
+  src: url("../fonts/Axiforma-SemiBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"),
+    url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Bold";
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Regular";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../fonts/Gilroy-Light.woff"),
+    url("Gilroy-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: light;
+}
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_- Default Settings _-_-_-_-_-_-_-_-_-_-_-_ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_- Main Part Settings _-_-_-_-_-_-_-_-_-_-_-_ */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgba(3, 18, 109, 1);
+  color: #fff;
+  padding: 25px 120px 30px;
+}
+
+nav {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-setting {
+  font-family: "Axiforma Semibold", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgba(165, 171, 205, 1);
+  white-space: nowrap;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  font-family: "Gilroy";
+}
+
+ul li {
+  list-style: none;
+}
+
+.linksToPages {
+  width: 18%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul a:hover,
+li:first-child a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changeLanguage {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  margin-right: 47px;
+  position: relative;
+}
+
+.controls .changeLanguage h3 {
+  font: 14px "Gilroy";
+  color: rgba(255, 255, 255, 1);
+  margin-right: 8px;
+}
+
+.drop-down-menu {
+  display: none;
+  flex-direction: column;
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+.changeLanguage img {
+  width: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger {
+  width: 23px;
+  position: relative;
+  cursor: pointer;
+}
+
+.burger .line {
+  height: 2px;
+  width: 23px;
+  margin: 5px 0;
+  background-color: #ffffff;
+}
+
+.main-menu {
+  text-align: left;
+  position: absolute;
+  top: 45px;
+  border-radius: 2px;
+  right: -2px;
+  width: 150px;
+  transform: translateX(1000px);
+  background: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-menu ul li:nth-child(1),
+.main-menu li:nth-child(3),
+.main-menu li:nth-child(5),
+.main-menu hr:nth-child(2),
+.main-menu hr:nth-child(4) {
+  display: none;
+}
+
+.main-menu ul li {
+  padding: 10px 20px;
+  margin: -2px 0 0 0;
+}
+
+.main-menu ul li a {
+  color: rgba(18, 18, 18, 1);
+}
+
+.main-menu ul li:hover {
+  background: rgba(3, 18, 109, 1);
+}
+
+.main-menu ul li:hover a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.attractiveAds {
+  width: 100%;
+  text-align: left;
+  padding: 70px 0 50px;
+}
+
+header h1 {
+  text-transform: capitalize;
+  font: 55px "Gilroy Bold";
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 100px !important;
+  position: relative;
+}
+
+.container img {
+  width: 35%;
+  position: absolute;
+  bottom: 40px;
+}
+
+.font-for-names {
+  font: 18px "Gilroy";
+  color: rgba(18, 18, 18, 1);
+}
+
+.for_text {
+  font: 14px "Gilroy Regular";
+  color: rgba(18, 18, 18, 1);
+  width: 72%;
+  margin-top: 8px;
+}
+
+.location {
+  width: 40%;
+}
+
+.location br {
+  display: none;
+}
+
+.locationOne {
+  width: 50%;
+}
+
+.location h2:nth-child(5) {
+  margin-top: 30px;
+}
+
+.tel {
+  font-family: "Gilroy Bold";
+}
+
+.message {
+  width: 55%;
+}
+
+.message h3 {
+  font-size: 19px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 18px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  height: 20vh;
+  margin-top: 18px;
+  font-family: "Gilroy Regular";
+  color: #000;
+}
+
+::placeholder {
+  font-family: "Gilroy Regular";
+}
+
+input[type="submit"] {
+  background: none;
+  outline: none;
+  border: 1px solid #121212;
+  margin-left: auto;
+  width: 30%;
+  color: rgba(18, 18, 18, 1);
+  font-family: "Gilroy Bold";
+}
+
+input[type="submit"]:active {
+  background: rgba(3, 18, 109, 1);
+  color: white;
+}
+
+.copyright1 {
+  color: white;
+  font: 8px "Gilroy Light";
+}
+
+.container,
+nav,
+.container1 {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container,
+  nav,
+  .container1 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  nav,
+  .container1 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  nav,
+  .container1 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  nav,
+  .container1 {
+    max-width: 1140px;
+  }
+}
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_- Footer Settings -_-_-_-_-_-_-_-_-_-_-_-_ */
+
+footer {
+  background-color: rgba(3, 18, 109, 1);
+  padding: 20px 120px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  font-family: "Gilroy Regular" !important;
+  color: white !important;
+}
+
+.map {
+  width: 100%;
+  height: 300px !important;
+  margin: 0 0 -4px 0;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_- JS effects _-_-_-_-_-_-_-_-_-_-_-_ */
+
+.show {
+  display: flex;
+}
+
+.show1 {
+  transform: rotateX(180deg);
+}
+
+.change-position {
+  transform: translateX(0px);
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_- Responsive Settings -_-_-_-_-_-_-_-_-_-_ */
+
+@media (max-width: 576px) {
+  header {
+    padding: 20px 20px;
+  }
+
+  .logo-setting {
+    font-size: 16px;
+  }
+
+  .linksToPages {
+    display: none;
+  }
+
+  .main-menu ul li:nth-child(1),
+  .main-menu li:nth-child(3),
+  .main-menu li:nth-child(5),
+  .main-menu hr:nth-child(2),
+  .main-menu hr:nth-child(4) {
+    display: initial;
+  }
+
+  .burger .line {
+    height: 1px;
+    margin: 7px 0;
+  }
+
+  .changeLanguage {
+    margin-right: 30px;
+  }
+
+  .attractiveAds {
+    padding: 50px 0 35px;
+  }
+
+  .attractiveAds br {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    padding: 30px 30px !important;
+    flex-direction: column;
+  }
+
+  .container img {
+    display: none;
+  }
+
+  .location,
+  .locationOne,
+  .message {
+    width: 100%;
+  }
+
+  .location br {
+    display: none;
+  }
+
+  .location h2:nth-child(5) {
+    margin-top: 30px;
+  }
+
+  .message h3 {
+    font-size: 16px;
+  }
+
+  .for_text {
+    font-size: 14px;
+  }
+
+  .font-for-names {
+    font: 16px "Gilroy Bold";
+    margin-top: 30px;
+  }
+
+  /* _-_-_-_-_-_-_-_-_-_-_-_-_-_- Footer Settings -_-_-_-_-_-_-_-_-_-_-_-_ */
+
+  footer {
+    padding: 0px 20px 15px;
+    flex-direction: column-reverse;
+    justify-content: start !important;
+  }
+
+  footer ul {
+    margin: 40px 0;
+    margin-right: auto !important;
+  }
+
+  footer a {
+    font-size: 12px !important;
+    font-family: "Gilroy Light";
+  }
+
+  footer ul li:nth-child(2) a {
+    margin: 0 20px;
+  }
+
+  footer ul li:last-child {
+    display: none;
+  }
+
+  footer p {
+    width: 100%;
+    text-align: left !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  header {
+    padding: 30px 60px;
+  }
+
+  .logo-setting {
+    font-size: 18.5px;
+  }
+
+  .linksToPages {
+    display: none;
+  }
+
+  .main-menu ul li:nth-child(1),
+  .main-menu li:nth-child(3),
+  .main-menu li:nth-child(5),
+  .main-menu hr:nth-child(2),
+  .main-menu hr:nth-child(4) {
+    display: initial;
+  }
+
+  .burger .line {
+    height: 1px;
+    margin: 7px 0;
+  }
+
+  .changeLanguage {
+    margin-right: 35px;
+  }
+
+  .attractiveAds {
+    padding: 60px 0 20px;
+  }
+
+  .attractiveAds br {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header p {
+    padding: 15px 0 0 0;
+    width: 70%;
+  }
+
+  .container {
+    padding: 40px 25px !important;
+    flex-direction: column;
+  }
+
+  .container img {
+    display: none;
+  }
+
+  .location,
+  .locationOne,
+  .message {
+    width: 100%;
+  }
+
+  .location br {
+    display: none;
+  }
+
+  .location h2:nth-child(5) {
+    margin-top: 30px;
+  }
+
+  .message h3 {
+    font-size: 19px;
+  }
+
+  form {
+    width: 70%;
+    justify-content: flex-start;
+  }
+
+  .for_text {
+    font-size: 15px;
+  }
+
+  .font-for-names {
+    font: 16px "Gilroy Bold";
+    margin-top: 25px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    margin-right: auto;
+    margin-left: initial;
+  }
+  /* _-_-_-_-_-_-_-_-_-_-_-_-_-_- Footer Settings -_-_-_-_-_-_-_-_-_-_-_-_ */
+  footer {
+    padding: 20px 70px;
+  }
+
+  footer ul {
+    width: 50%;
+  }
+
+  footer a {
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    padding: 30px 70px;
+  }
+
+  .logo-setting {
+    font-size: 14px;
+  }
+
+  .linksToPages li {
+    margin: 0 15px;
+  }
+
+  ul li a {
+    font-size: 11px;
+  }
+
+  .main-menu ul li:nth-child(1),
+  .main-menu li:nth-child(3),
+  .main-menu li:nth-child(5),
+  .main-menu hr:nth-child(2),
+  .main-menu hr:nth-child(4) {
+    display: none;
+  }
+
+  .burger .line {
+    height: 1px;
+    margin: 7px 0;
+  }
+
+  .changeLanguage {
+    margin-right: 35px;
+  }
+
+  .changeLanguage h3 {
+    font-size: 13px !important;
+  }
+
+  .attractiveAds {
+    padding: 70px 30px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  header p {
+    padding: 25px 0 0 0;
+  }
+
+  .attractiveAds {
+    padding: 50px 0 20px;
+  }
+
+  .attractiveAds p {
+    display: none;
+  }
+
+  .container {
+    padding: 40px 20px !important;
+  }
+
+  .container img {
+    left: 18%;
+  }
+
+  .location br {
+    display: block;
+  }
+
+  .location h2:nth-child(5) {
+    margin-top: 0px;
+  }
+
+  .message h3 {
+    font-size: 16px;
+  }
+
+  .for_text {
+    font-size: 13px;
+  }
+
+  .font-for-names {
+    font: 15px "Gilroy Bold";
+    margin-top: 30px;
+  }
+  /* _-_-_-_-_-_-_-_-_-_-_-_-_-_- Footer Settings -_-_-_-_-_-_-_-_-_-_-_-_ */
+
+  footer {
+    padding: 15px 70px;
+  }
+
+  footer ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  header {
+    padding: 30px 70px;
+  }
+
+  .logo-setting {
+    font-size: 18.5px;
+  }
+
+  .linksToPages {
+    width: 25%;
+  }
+  .linksToPages li {
+    margin: 0 20px;
+  }
+
+  ul li a {
+    font-size: 13px;
+  }
+
+  .main-menu ul li:nth-child(1),
+  .main-menu li:nth-child(3),
+  .main-menu li:nth-child(5),
+  .main-menu hr:nth-child(2),
+  .main-menu hr:nth-child(4) {
+    display: none;
+  }
+
+  .burger .line {
+    height: 1px;
+    margin: 7px 0;
+  }
+
+  .changeLanguage {
+    margin-right: 35px;
+  }
+
+  .changeLanguage h3 {
+    font-size: 13px !important;
+  }
+
+  .attractiveAds {
+    padding: 55px 0px 20px;
+  }
+
+  header h1 {
+    font-size: 44px;
+  }
+
+  header p {
+    padding: 25px 0 0 0;
+    width: 60%;
+  }
+
+  .container {
+    padding: 60px 70px;
+  }
+
+  .location h2:nth-child(5) {
+    margin-top: 30px;
+  }
+
+  .for_text {
+    font-size: 14px;
+  }
+
+  .font-for-names {
+    font: 16px "Gilroy Bold";
+    margin-top: 30px;
+  }
+
+  /* _-_-_-_-_-_-_-_-_-_-_-_-_-_- Footer Settings _-_-_-_-_-_-_-_-_-_-_-_ */
+
+  footer {
+    padding: 20px 60px;
+  }
+
+  footer ul {
+    width: 35%;
+  }
+}
