@@ -1,0 +1,74 @@
+<!doctype html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Title -->
+        <title>FullFill Admin Page</title>
+
+        <!--Bootstrap.min css-->
+        <link rel="stylesheet" href="/admin/plugins/bootstrap/css/bootstrap.min.css">
+
+        <!-- Dashboard css -->
+        <link href="/admin/css-dark/style.css" rel="stylesheet" />
+
+        <!-- Custom scroll bar css-->
+        <link href="/admin/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+        <!-- Horizontal-menu css -->
+        <link href="/admin/plugins/horizontal-menu/dropdown-effects/fade-down.css" rel="stylesheet">
+        <link href="/admin/plugins/horizontal-menu/dark-horizontalmenu.css" rel="stylesheet">
+
+        <!--Daterangepicker css-->
+        <link href="/admin/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+
+        <!-- Owl Theme css-->
+        <link href="/admin/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+        <!-- Sidebar Accordions css -->
+        <link href="/admin/plugins/accordion1/css/dark-easy-responsive-tabs.css" rel="stylesheet">
+
+        <!-- Morris  Charts css-->
+        <link href="/admin/plugins/morris/morris.css" rel="stylesheet" />
+
+        <!---Font icons css-->
+        <link href="/admin/plugins/iconfonts/plugin.css" rel="stylesheet" />
+        <link href="/admin/plugins/iconfonts/icons.css" rel="stylesheet" />
+        <link href="/admin/fonts/fonts/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body class="app">
+<% var error %>
+<!-- lock-screen-content -->
+<div class="page-content">
+    <div class="container text-center text-dark">
+        <div class="row">
+            <div class="col-lg-4 d-block mx-auto">
+                <div class="row">
+                    <div class="col-xl-12 col-md-12 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="m-4 d-none d-lg-block text-center">
+                                    <span class="h4"><strong>Admin</strong></span>
+                                </span>
+                                <% if(error) {%>
+                                    <div class="alert alert-danger">
+                                        <%= error %>
+                                    </div>
+                                <%}%>
+                                <form class="form-group"  method="POST">
+                                    <input type="text" class="form-control" name="name" placeholder="Your login" required>
+                                    <input type="password" class="form-control mt-3 mb-5" name="password" placeholder="Password" required>
+                                    <button href="index.html" class="btn btn-primary btn-block">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- lock-screen-content end -->

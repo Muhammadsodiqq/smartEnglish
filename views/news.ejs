@@ -20,7 +20,7 @@
         </div>
 
         <ul class="linksToPages">
-          <li><a href="/index">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/courses">Courses</a></li>
         </ul>
@@ -46,7 +46,7 @@
             <div class="line line3"></div>
             <div id="main-menu-content" class="main-menu">
               <ul>
-                <li><a href="/index">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <hr style="width: 100%" />
                 <li><a href="/about">About</a></li>
                 <hr style="width: 100%" />
@@ -85,27 +85,13 @@
       <div class="nutshell">
         <h3>In a nutshell:</h3>
         <ul>
-          <div class="advantage">
-            <img src="img/right.svg" alt="" />
-            <li>You can attend classes every day</li>
-          </div>
-
-          <div class="advantage">
-            <img src="img/right.svg" alt="" style="vertical-align: top" />
-            <li>
-              You can receive discounts. It is worth mentioning that you can
-              study FREE and also we can pay you money if you perform well in
-              Smart English
-            </li>
-          </div>
-
-          <div class="advantage">
-            <img src="img/right.svg" alt="" />
-            <li>
-              You will have the opportunity to compare your knowledge through
-              monthly exams.
-            </li>
-          </div>
+          <% for(let i of news) {%> 
+            <div class="advantage">
+              <img src="img/right.svg" alt="" />
+              <li><%= i.message %> </li>
+            </div>
+          <% }%> 
+          
         </ul>
       </div>
     </div>
@@ -124,7 +110,7 @@
         </div>
         <div class="pages">
           <ul>
-            <li><a href="/index">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/news">News</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/study">Study & work</a></li>

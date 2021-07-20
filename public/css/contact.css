@@ -140,6 +140,16 @@ li:first-child a {
   transition: all 0.3s ease-in-out;
 }
 
+.danger {
+  width: 100%;
+  background-color: #F8D7DA;
+  color: #B55529;
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+
 .burger {
   width: 23px;
   position: relative;

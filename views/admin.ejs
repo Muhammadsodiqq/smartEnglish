@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- Title -->
+	<title>Smart English Official.</title>
+	
+	<!--Bootstrap.min css-->
+	<link rel="stylesheet" href="/admin/plugins/bootstrap/css/bootstrap.min.css">
+	
+	<!-- Dashboard css -->
+	<link href="/admin/css-dark/style.css" rel="stylesheet" />
+	
+	<!-- Custom scroll bar css-->
+	<link href="/admin/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- Horizontal-menu css -->
+	<link href="/admin/plugins/horizontal-menu/dropdown-effects/fade-down.css" rel="stylesheet">
+	<link href="/admin/plugins/horizontal-menu/dark-horizontalmenu.css" rel="stylesheet">
+	
+	<!--Daterangepicker css-->
+	<link href="/admin/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	
+	<!-- Owl Theme css-->
+	<link href="/admin/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+	
+	<!-- Sidebar Accordions css -->
+	<link href="/admin/plugins/accordion1/css/dark-easy-responsive-tabs.css" rel="stylesheet">
+	
+	<!-- Morris  Charts css-->
+	<link href="/admin/plugins/morris/morris.css" rel="stylesheet" />
+	
+	<!---Font icons css-->
+	<link href="/admin/plugins/iconfonts/plugin.css" rel="stylesheet" />
+	<link href="/admin/plugins/iconfonts/icons.css" rel="stylesheet" />
+	<link href="/admin/fonts/fonts/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="app">
+	
+	<!--Global-Loader-->
+	<div id="global-loader">
+		<img src="/admin/images/icons/loader.svg" alt="loader">
+	</div>
+	
+	
+	<div class="page">
+		<div class="page-main">
+			<!--app-header-->
+			<div class="app-header header hor-topheader d-flex">
+				<div class="container">
+					<div class="d-flex pt-1"
+					style="justify-content: space-between; align-items: center; padding: 15px 0px;">
+					<a class="header-brand" href="/">
+						<h1>Smart English Official.</h1>
+					</a>
+					<a class="nav-link leading-none siderbar-link">
+						<span class="mr-3 d-none d-lg-block ">
+							<span class="text-gray-white"><span class="ml-2">Admin</span></span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--app-header end-->
+		
+		<!-- app-content-->
+		<div class="container content-area">
+			<div class="side-app">
+				
+				<!-- page-header -->
+				<div class="page-header">
+					
+				</div>
+				<!-- End page-header -->
+				
+				<div class="row">
+					<div class="col-12">
+						<%if(error.length){%>
+							<div class="alert alert-danger" style="position: fixed;z-index: 200;"> <%=error%></div>
+							<%}%>
+							
+							<ul>
+								<li>
+									<h1>Bosh sahifaga - qismi uchun</h1>
+									<ul>
+										<li>
+											<h2>About us</h2>
+											<form action="/admin/about" method="POST">
+												<textarea name="about" class="form-control" cols="30" rows="5"
+												placeholder="1) Text uchun" required></textarea>
+												<input type="hidden" name="id" value="<%=id%>">
+												<button type="submit"
+												class="form-control btn btn-primary mt-3">Yuborish</button>
+											</form>
+										</li>
+										<li>
+											<h2 class="mt-5 pt-5">Our Courses (qo'shish uchun)</h2>
+											<form action="/admin/courses" method="POST">
+												<label class="label mt-3"  for="file">Title 
+													<input type="text" placeholder="title" name="title" class="form-control" id="founderImg">
+												</label>
+												<textarea name="info"
+												placeholder="About" class="form-control mt-3"
+												cols="30" rows="6"></textarea>
+												<button type="submit"
+												class="form-control btn btn-primary mt-3">Yuborish</button>
+											</form>
+										</li>
+										<li>
+											<h2 class="mt-5 pt-5">Our Courses (tahrirlash uchun)</h2>
+											<form action="/admin/edit/courses" method="POST">
+												
+												<label class="label mt-3"  for="file">title of editing 
+													<input type="text" placeholder="title of editing " name="title" class="form-control" id="founderImg">
+												</label>
+												<label class="label mt-3"  for="file">New title 
+													<input type="text" placeholder="New title " name="new_title" class="form-control" id="founderImg">
+												</label>
+												<textarea name="info"
+												placeholder="About" class="form-control mt-3"
+												cols="30" rows="6"></textarea>
+												<button type="submit"
+												class="form-control btn btn-primary mt-3">Yuborish</button>
+											</form>
+										</li>
+										<li>
+											<h2 class="mt-5 pt-5">statistika qismi (qo'shish uchun)</h2>
+											<form action="/admin/add/statistics" method="POST">
+												<label class="label mt-3"  for="file">title of editing 
+													<input type="text" placeholder="title " name="title" class="form-control" id="founderImg">
+												</label>
+												<label class="label mt-3"  for="file">Number 
+													<input type="number" placeholder="number " name="number" class="form-control" id="founderImg">
+												</label>
+												<button type="submit"
+												class="form-control btn btn-primary mt-3">Yuborish</button>
+											</form>
+										</li>
+										
+										<li>
+											<h2 class="mt-5 pt-5">statistika qismi (o'chirish uchun)</h2>
+											<form action="/admin/delete/statistics" method="POST">
+												<label class="label mt-3"  for="file">title of deleting 
+													<input type="text" placeholder="title " name="title" class="form-control" id="founderImg">
+												</label>
+												<button type="submit"
+												class="form-control btn btn-primary mt-3">Yuborish</button>
+											</form>
+										</li>
+										
+										<li>
+											<h2 class="mt-5 pt-5">home news qismi (tahrirlash)</h2>
+											<form action="/admin/edit/newsHome" method="POST">
+												<label class="label mt-3"  for="file">Title 
+													<input type="text" placeholder="title" name="new_title" class="form-control" id="founderImg">
+												</label>
+												<input type="hidden" name="title" value="<%=newsId%>" id="">
+												<textarea name="info"
+												placeholder="About" class="form-control mt-3"
+												cols="30" rows="6"></textarea>
+												<button type="submit"
+												class="form-control btn btn-primary mt-3">Yuborish</button>
+											</form>
+										</li>
+										<h1 style="margin-top: 120px;">News - qismi uchun</h1>
+										<li>
+											<h2 class="mt-5 pt-5">news qismi (qo'shish)</h2>
+											<form action="/admin/add/news" method="POST">
+												<label class="label mt-3"  for="file">Title 
+													<textarea name="text"
+													placeholder="About" class="form-control mt-3"
+													cols="30" rows="6"></textarea>
+												</label>	
+												<button type="submit" class="form-control btn btn-primary mt-3">Yuborish</button>
+											</form>
+										</li>
+										
+										<li>
+											<h2 class="mt-5 pt-5">news qismi (o'chirish)</h2>
+											<form action="/admin/delete/news" method="POST">
+												<label class="label mt-3"  for="file">number of news 
+													<input type="number" class="form-control mt-3" name="num" id="">
+													
+												</label>	
+												<button type="submit" class="form-control btn btn-primary mt-3">Yuborish</button>
+											</form>
+										</li>
+										
+										
+										<h1 style="margin-top: 120px;">Team - qismi uchun</h1>
+										
+										<li>
+											<h2 class="mt-5 pt-5">Team - for img, name, text</h2>
+											<form action="/admin/add" method="POST">
+												<label class="label mt-3" for="file">Rasm uchun
+													<input type="file" name="files" class="form-control" >
+												</label>
+												<!-- <input type="text" class="form-control mt-3" name="text" -->
+												<!-- placeholder="O'quvchilar haqida - ismi uchun" id="inputPeoplesH4"> -->
+												<!-- <input type="text" class="form-control mt-3" name="info-peoples-text" -->
+												<!-- placeholder="O'quvchilari haqida - text uchun" id="inputPeoplesP"> -->
+												<button type="submit"
+												class="form-control btn btn-primary mt-3">Yuborish</button>
+											</form>
+										</li>
+									</ul>
+								</li>
+								
+								<hr>
+								<li>
+									<h1 style="margin-top: 120px;">Aloqa - qismi uchun</h1>
+									<ol>
+										<li>
+											<div class="row mt-5 pt-5">
+												<div class="col-lg-12">
+													<div class="e-panel card">
+														<div class="card-header">
+															<h4>Users</h4>
+														</div>
+														<div class="card-body"
+														style="max-height: 400px; overflow: scroll;">
+														<div class="e-table">
+															<div class="table-responsive table-lg">
+																<table class="table table-bordered">
+																	<thead>
+																		<tr>
+																			<th class="text-center">No</th>
+																			<th class="text-center">Ism</th>
+																			<th class="text-center">Email</th>
+																			<th class="text-center">Telefon</th>
+																			<th>Xabar</th>
+																			<th class="text-center">Actions</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<%for(let i in data) {%>
+																			<tr>
+																				<td class="text-center align-middle"><%= Number(i) + 1 %></td>
+																				<td class="text-center align-middle"><%=data[i].name%>
+																				</td>
+																				<td class="text-center align-middle">
+																					<%=data[i].email%></td>
+																					<td class="text-center align-middle">
+																						<a style="color: #fff;text-decoration: underline;"href="tel:<%=data[i].phone%>"> <%=data[i].phone%></a></td>
+																						<td class="align-middle"><%=data[i].message%>
+																						</td>
+																						<td class="text-center align-middle">
+																							<form class="btn-group align-top"
+																							action="/admin/contact/delete" method="POST">
+																							<input type="hidden"name = "delete"value="<%= data[i].email%>"/>
+																							<button
+																							class="btn btn-sm btn-primary badge"
+																							type="submit"><i
+																							class="fa fa-trash"></i></button>
+																						</form>
+																					</td>
+																				</tr>
+																				<%}%>
+																			</tbody>
+																		</table>
+																		
+																		
+																		
+																		
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ol>
+									</li>
+									<li>
+										<h1 style="margin-top: 120px;">Course ga yozilganlar</h1>
+										<ol>
+											<li>
+												<div class="row mt-5 pt-5">
+													<div class="col-lg-12">
+														<div class="e-panel card">
+															<div class="card-header">
+																<h4>Users</h4>
+															</div>
+															<div class="card-body"
+															style="max-height: 400px; overflow: scroll;">
+															<div class="e-table">
+																<div class="table-responsive table-lg">
+																	<table class="table table-bordered">
+																		<thead>
+																			<tr>
+																				<th class="text-center">No</th>
+																				<th class="text-center">Ism</th>
+																				<th class="text-center">Email</th>
+																				<th class="text-center">Telefon</th>
+																				<th>age</th>
+																				<th class="text-center">Actions</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<%for(let i in data2) {%>
+																				<tr>
+																					<td class="text-center align-middle"><%= Number(i) + 1 %></td>
+																					<td class="text-center align-middle"><%=data2[i].name%>
+																					</td>
+																					<td class="text-center align-middle">
+																						<%=data2[i].email%></td>
+																						<td class="text-center align-middle">
+																							<a style="color: #fff; text-decoration: underline;" href="tel:<%=data2[i].phone%>"><%=data2[i].phone%></a></td>
+																							<td class="align-middle"><%=data2[i].age%>
+																							</td>
+																							<td class="text-center align-middle">
+																								<form class="btn-group align-top"
+																								action="/admin/contact1/delete" method="POST">
+																								<input type="hidden"name = "delete"value="<%= data2[i].email%>"/>
+																								<button
+																								class="btn btn-sm btn-primary badge"
+																								type="submit"><i
+																								class="fa fa-trash"></i></button>
+																							</form>
+																						</td>
+																					</tr>
+																					<%}%>
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End main-->
+			<!--footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12   text-center">
+							Copyright © 2021 <a href="#">FullFill</a>. Marva - Group. All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+			
+		</div>
+		<!-- End app-content-->
+	</div>
+</div>
+<!-- End Page -->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- Jquery js-->
+<script src="/admin/js-dark/vendors/jquery-3.2.1.min.js"></script>
+
+<!--Bootstrap.min js-->
+<script src="/admin/plugins/bootstrap/popper.min.js"></script>
+<script src="/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--Jquery Sparkline js-->
+<script src="/admin/js-dark/vendors/jquery.sparkline.min.js"></script>
+
+
+<!-- Sidebar Accordions js -->
+<script src="/admin/plugins/accordion1/js/easyResponsiveTabs.js"></script>
+
+<!-- Custom scroll bar js-->
+<script src="/admin/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<!-- Rightsidebar js -->
+<script src="/admin/plugins/sidebar/sidebar.js"></script>
+
+<!-- Custom js-->
+<script src="/admin/js-dark/custom.js"></script>
+</body>
+
+</html>

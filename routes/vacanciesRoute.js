@@ -2,10 +2,10 @@ const router  = require("express").Router()
 
 
 router.get("/", (req,res) => {
-	res.render("vacansiec")
+	res.render("vacancies")
 })
 
 module.exports = {
-	path:"/vacansiec",
+	path:"/vacancies",
 	router
 }

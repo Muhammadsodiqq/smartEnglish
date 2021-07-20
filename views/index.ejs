@@ -1,190 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart English Official</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/navbar-footer-settings.css" />
-    <link rel="icon" href="img/Group 5.png" type="image/png" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="navbar-brand">
-          <h3 class="logo-setting">
-            smart english <br />
-            official.
-          </h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart English Official</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/navbar-footer-settings.css" />
+  <link rel="icon" href="img/Group 5.png" type="image/png" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="navbar-brand">
+        <h3 class="logo-setting">
+          smart english <br />
+          official.
+        </h3>
+      </div>
+
+      <ul class="linksToPages">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/courses">Courses</a></li>
+      </ul>
+
+      <div class="controls">
+        <div class="changeLanguage">
+          <h3 onclick="myFunction()" class="dropbtn">Eng</h3>
+
+          <img
+          id="direction"
+          class="dropbtn"
+          src="img/controlsPart.svg"
+          alt=""
+          onclick="myFunction()"
+          />
+          <ul id="drop-down" class="drop-down-menu">
+            <li><a href="#">Uzb</a></li>
+          </ul>
         </div>
-
-        <ul class="linksToPages">
-          <li><a href="/index">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/courses">Courses</a></li>
-        </ul>
-
-        <div class="controls">
-          <div class="changeLanguage">
-            <h3 onclick="myFunction()" class="dropbtn">Eng</h3>
-
-            <img
-              id="direction"
-              class="dropbtn"
-              src="img/controlsPart.svg"
-              alt=""
-              onclick="myFunction()"
-            />
-            <ul id="drop-down" class="drop-down-menu">
-              <li><a href="#">Uzb</a></li>
+        <div class="burger" onclick="name()">
+          <div class="burger line line1"></div>
+          <div class="burger line line2"></div>
+          <div class="burger line line3"></div>
+          <div id="main-menu-content" class="main-menu">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <hr style="width: 100%" />
+              <li><a href="/about">About</a></li>
+              <hr style="width: 100%" />
+              <li><a href="/courses">Courses</a></li>
+              <hr style="width: 100%" />
+              <li><a href="#">Ta'lim & ish</a></li>
+              <hr style="width: 100%" />
+              <li><a href="/vacancies">Vakansiya</a></li>
+              <hr style="width: 100%" />
+              <li><a href="/news">News</a></li>
+              <hr style="width: 100%" />
+              <li><a href="/contact">Bog'lanish</a></li>
             </ul>
           </div>
-          <div class="burger" onclick="name()">
-            <div class="burger line line1"></div>
-            <div class="burger line line2"></div>
-            <div class="burger line line3"></div>
-            <div id="main-menu-content" class="main-menu">
-              <ul>
-                <li><a href="/index">Home</a></li>
-                <hr style="width: 100%" />
-                <li><a href="/about">About</a></li>
-                <hr style="width: 100%" />
-                <li><a href="/courses">Courses</a></li>
-                <hr style="width: 100%" />
-                <li><a href="#">Ta'lim & ish</a></li>
-                <hr style="width: 100%" />
-                <li><a href="/vacancies">Vakansiya</a></li>
-                <hr style="width: 100%" />
-                <li><a href="/news">News</a></li>
-                <hr style="width: 100%" />
-                <li><a href="/contact">Bog'lanish</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </nav>
-
-      <div class="attractiveAds">
-        <h1>the smartest way to learn english</h1>
-        <p style="text-align: center">
-          The Smart English Official Academy is a model school capable of
-          transforming the surrounding <br />
-          classrooms into a ubiquitous one.
-        </p>
       </div>
-    </header>
+    </nav>
 
-    <div class="container">
-      <div class="about-part">
-        <h1 class="font-for-titles">About Us</h1>
-        <div class="description">
+    <div class="attractiveAds">
+      <h1>the smartest way to learn english</h1>
+      <p style="text-align: center">
+        The Smart English Official Academy is a model school capable of
+        transforming the surrounding <br />
+        classrooms into a ubiquitous one.
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="about-part">
+      <h1 class="font-for-titles">About Us</h1>
+      <div class="description">
+        <p class="font-for-description">
+          <%=about%>
+        </p>
+
+        <a href="/about"
+        >Learn more <img src="img/Vector.svg" alt="Vector"
+        /></a>
+      </div>
+    </div>
+
+    <div class="courses">
+      <h1 class="font-for-titles">Our Courses</h1>
+
+      <div class="typesOfCourses">
+        <%for(let i of courses){%>
+        <% let index = courses.indexOf(i) % 2 %> 
+        <div class=" <%=index ? 'adults' : 'teenagers'%>">
+          <h1 class="font-for-titles"><%=i.title%></h1>
           <p class="font-for-description">
-            Exactly <span class="dark">4 years </span>ago, in the middle of
-            winter, on
-            <span class="dark">January 5, 2017, Akmaljon Khusanov</span>
-            established the <span class="dark">SMART ENGLISH</span> education
-            center in Marhamat City under an individual entrepreneur in a small
-            room with a small number of students. Soon, the company's name and
-            <span class="dark">Akmaljon Husanov's</span> teaching methods spread
-            among the students, which led to a sharp increase in the number of
-            students.
+            <%=i.message%>
           </p>
 
-          <a href="/about"
-            >Learn more <img src="img/Vector.svg" alt="Vector"
+          <a class="setting-for-links" href="/courses"
+          >Learn more
+          <img class="settings-for-link-img" src="img/Vector.svg" alt=""
           /></a>
         </div>
+        <%}%>
       </div>
+    </div>
 
-      <div class="courses">
-        <h1 class="font-for-titles">Our Courses</h1>
-
-        <div class="typesOfCourses">
-          <div class="adults">
-            <h1 class="font-for-titles">Adults</h1>
-            <p class="font-for-description">
-              Over 15 - years oldis an opportunity to practice spoken English in
-              the most conducive environment.
-            </p>
-
-            <a class="setting-for-links" href="/courses"
-              >Learn more
-              <img class="settings-for-link-img" src="img/Vector.svg" alt=""
-            /></a>
-          </div>
-          <div class="teenagers">
-            <h1 class="font-for-titles">Teenagers</h1>
-            <p class="font-for-description">
-              Over 13 - 14 year old includes six levels: from A1 to B2 according
-              to the Common European Framework of Reference for Languages
-              (CEFR).
-            </p>
-
-            <a class="setting-for-links" href="/courses"
-              >Learn more
-              <img class="settings-for-link-img" src="img/Vector.svg" alt=""
-            /></a>
-          </div>
-          <div class="kids">
-            <h1 class="font-for-titles">Kids</h1>
-            <p class="font-for-description">
-              Over 7 - 12 years old Smart English helps young learners practice
-              their English skills while having fun.
-            </p>
-            <a class="setting-for-links" href="/courses"
-              >Learn more
-              <img class="settings-for-link-img" src="img/Vector.svg" alt=""
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="news">
-        <h1 class="font-for-titles">News</h1>
+    <div class="news">
+      <h1 class="font-for-titles">News</h1>
+      <% if(news) {%> 
         <div class="description">
           <h3>
-            We provide advice and support <br />
-            when studying abroad.
+           <%= news.title %> 
           </h3>
           <p class="font-for-description">
-            Smart English is an innovative learning center! Here you will find
-            classes in the style of your dream. All facilities and news will be
-            continuous; also there are competitions such as debate clubs,
-            conversation clubs and battles, where all young people will test
-            their knowledge.
+            <%= news.message %> 
           </p>
         </div>
-      </div>
+      <% }%> 
+    </div>
 
-      <div class="statistics">
-        <h1 class="font-for-titles">Statistics</h1>
-        <div class="data">
-          <div class="part">
-            <div class="numbers">
-              <h1 class="font-for-titles">850</h1>
-              <p class="fonts-for-data">Current students</p>
-            </div>
-
-            <div class="numbers">
-              <h1 class="font-for-titles">2</h1>
-              <p class="fonts-for-data">Branches in Andijan</p>
-            </div>
+    <div class="statistics">
+      <h1 class="font-for-titles">Statistics</h1>
+      <div class="data">
+        <%for(let i of statistic){%>
+          <% let index = statistic.indexOf(i) % 2 %> 
+        <div class="part">
+          <%if(index == 1){%>
+          <div class="numbers">
+            <h1 class="font-for-titles"><%=i.number%></h1>
+            <p class="fonts-for-data"><%=i.title%></p>
+          </div>
+          <%}%>
           </div>
           <div class="part">
+            <%if(index == 0){%>
             <div class="numbers">
-              <h1 class="font-for-titles">110</h1>
+              <h1 class="font-for-titles"><%=i.number%></h1>
               <p class="fonts-for-data">
-                Received IELTS or <br />
-                cefr cerificate
+                <%=i.title%>
               </p>
             </div>
-
-            <div class="numbers">
-              <h1 class="font-for-titles">30</h1>
-              <p class="fonts-for-data">Experienced teachers</p>
-            </div>
+            <%}%>
           </div>
+          <%}%>
         </div>
       </div>
 
@@ -236,19 +199,19 @@
         </div>
       </div>
       <img
-        class="background-effect background-img"
-        src="img/Group 136.svg"
-        alt=""
+      class="background-effect background-img"
+      src="img/Group 136.svg"
+      alt=""
       />
       <img
-        class="background-effect background-img1"
-        src="img/Group 137.svg"
-        alt=""
+      class="background-effect background-img1"
+      src="img/Group 137.svg"
+      alt=""
       />
       <img
-        class="background-effect background-img2"
-        src="img/Group 138.svg"
-        alt=""
+      class="background-effect background-img2"
+      src="img/Group 138.svg"
+      alt=""
       />
     </div>
 
@@ -266,7 +229,7 @@
         </div>
         <div class="pages">
           <ul>
-            <li><a href="/index">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/news">News</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/study">Study & work</a></li>
@@ -301,4 +264,4 @@
     </footer>
     <script src="js/main.js"></script>
   </body>
-</html>
+  </html>

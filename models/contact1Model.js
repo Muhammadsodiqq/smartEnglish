@@ -1,0 +1,29 @@
+module.exports = async (Sequelize,sequelize) => {
+	return await sequelize.define("contact1", {
+		id:{
+			type:Sequelize.DataTypes.UUID,
+			primaryKey:true,
+			defaultValue:Sequelize.UUIDV4()
+		},
+		name:{
+			type:Sequelize.DataTypes.STRING(64),
+			allowNull:false
+		},
+		email:{
+			type:Sequelize.DataTypes.STRING(64),
+			is:/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+			allowNull:false,
+			unique:true
+		},
+		phone:{
+			type:Sequelize.DataTypes.STRING(13),
+			is:/^9989[012345789][0-9]{7}$/,
+			unique:true,
+			allowNull:false
+		},
+		age:{
+			type:Sequelize.DataTypes.STRING(3),
+			allowNull:false
+		}
+	})
+}

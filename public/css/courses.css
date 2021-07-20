@@ -81,6 +81,16 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.danger {
+  width: 100%;
+  background-color: #F8D7DA;
+  color: #B55529;
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+
 button[type="submit"]:hover {
   background: rgba(3, 18, 109, 1);
   color: white;
